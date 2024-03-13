@@ -21,11 +21,11 @@ As a part-time shopper, I embarked on a data analysis project to optimize my ear
 ## Key Findings:
 -	Insights from Simplest Model: The basic model considering pay and item number yielded crucial insights.
 -	Formula:
-  1.	With the simplest model, the minimum active time is 26 minutes.
-  2.	Total estimated active time = 26 + pay * 0.8 + item * 1.5.
-  3.	To simplify calculation, I would estimate active time = 26 + pay + item * 1.5.
-  4.	From the result, I should only accept orders at least 9 (desire pay rate $18 * 0.5 hr).
-  5.	To judge if I should accept the order, I will calculate: Pay - Display KM * 0.1 * 2 (round trip) - Desire Pay Rate * Estimated Active Time = Pay - Display KM * 0.1 * 2 - 18 * (26 + Pay + 1.5 * Item) / 60 If it is positive, I should take the order.
+  1.	With the simplest model, the minimum active time is 26.9 minutes
+  2.	Total estimated active time = 26.9 + Display_km * 1.6 + item * 1.7
+  3.	To simplify calculation, I would estimate active time = 27 + (Display_km + item) * 1.5
+  4.	From the result, I should only accept orders at least 9 (desire pay rate $18 * 0.5 hr)
+  5.	To judge if I should accept the order, I will calculate: Pay - Display KM * 0.1 * 2 (round trip) - Desire Pay Rate * Estimated Active Time = Pay - Display KM * 0.1 * 2 - 18 * (27 + (Display_km + item) * 1.5) / 60 If it is positive, I should take the order.
 -	Average Active Time: The mean active time for orders was found to be approximately 80 minutes.
 -	Time-Based Trends: A dip in orders was observed between 10:00 to 12:00, indicating a potential period of lower demand.
 -	Impact of Batch Size: Batch size 3 emerged as the most profitable, while batch size 2 exhibited the least profitability.
